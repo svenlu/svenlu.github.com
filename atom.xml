@@ -4,7 +4,7 @@
   <title><![CDATA[Modu Life]]></title>
   <link href="http://svenlu.github.io/atom.xml" rel="self"/>
   <link href="http://svenlu.github.io/"/>
-  <updated>2014-07-21T20:04:27+08:00</updated>
+  <updated>2014-07-21T20:07:21+08:00</updated>
   <id>http://svenlu.github.io/</id>
   <author>
     <name><![CDATA[Sven Lu]]></name>
@@ -18,9 +18,12 @@
     <link href="http://svenlu.github.io/blog/2014/07/21/gao-fu-zai-xi-tong-%2Cwang-luo-can-shu-diao-zheng/"/>
     <updated>2014-07-21T19:53:00+08:00</updated>
     <id>http://svenlu.github.io/blog/2014/07/21/gao-fu-zai-xi-tong-,wang-luo-can-shu-diao-zheng</id>
-    <content type="html"><![CDATA[<p>调整/etc/sysctl.conf
-···bash
-vim /etc/sysctl.conf</p>
+    <content type="html"><![CDATA[<p>调整/etc/sysctl.conf</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>vim /etc/sysctl.conf
+</span></code></pre></td></tr></table></div></figure>
+
 
 <ol>
 <li> net.ipv4.tcp_syncookies = 1</li>

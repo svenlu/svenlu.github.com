@@ -7,9 +7,8 @@
 	<meta name="author" content="Sven Lu">
 
 	
-	<meta name="description" content="调整/etc/sysctl.conf
-···bash
-vim /etc/sysctl.conf net.ipv4.tcp_syncookies = 1 表示开启SYN Cookies。当出现SYN等待队列溢出时，启用cookies来处理，可防范少量SYN攻击，默认为0，表示关闭； net. &hellip;">
+	<meta name="description" content="调整/etc/sysctl.conf 1
+vim /etc/sysctl.conf net.ipv4.tcp_syncookies = 1 表示开启SYN Cookies。当出现SYN等待队列溢出时，启用cookies来处理，可防范少量SYN攻击，默认为0，表示关闭； net.ipv4. &hellip;">
 	
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
@@ -86,9 +85,12 @@ vim /etc/sysctl.conf net.ipv4.tcp_syncookies = 1 表示开启SYN Cookies。当�
 			高负载系统，网络参数调整</a>
 	</h2>
 	<div class="entry-content">
-		<p>调整/etc/sysctl.conf
-···bash
-vim /etc/sysctl.conf</p>
+		<p>调整/etc/sysctl.conf</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>vim /etc/sysctl.conf
+</span></code></pre></td></tr></table></div></figure>
+
 
 <ol>
 <li> net.ipv4.tcp_syncookies = 1</li>
