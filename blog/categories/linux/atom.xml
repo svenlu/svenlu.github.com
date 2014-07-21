@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Modu Life]]></title>
-  <link href="http://svenlu.github.io/atom.xml" rel="self"/>
+  <title><![CDATA[Category: Linux | Modu Life]]></title>
+  <link href="http://svenlu.github.io/blog/categories/linux/atom.xml" rel="self"/>
   <link href="http://svenlu.github.io/"/>
   <updated>2014-07-21T20:04:27+08:00</updated>
   <id>http://svenlu.github.io/</id>

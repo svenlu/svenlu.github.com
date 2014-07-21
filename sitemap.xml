@@ -1,20 +1,26 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
     <url>
+        <loc>
+            http://svenlu.github.io/blog/2014/07/21/gao-fu-zai-xi-tong-%2Cwang-luo-can-shu-diao-zheng/
+        </loc>
+        <lastmod>2014-07-21T20:03:21+08:00</lastmod>
+    </url>
+    <url>
         <loc>http://svenlu.github.io/archives/</loc>
-        <lastmod>2014-07-18T14:44:31+08:00</lastmod>
+        <lastmod>2014-07-21T20:03:21+08:00</lastmod>
     </url>
     <url>
         <loc>http://svenlu.github.io/blog/archives/</loc>
-        <lastmod>2014-07-18T14:44:31+08:00</lastmod>
+        <lastmod>2014-07-21T20:03:21+08:00</lastmod>
     </url>
     <url>
         <loc>http://svenlu.github.io/blog/</loc>
-        <lastmod>2014-07-18T14:44:31+08:00</lastmod>
+        <lastmod>2014-07-21T20:03:21+08:00</lastmod>
     </url>
     <url>
         <loc>http://svenlu.github.io/</loc>
-        <lastmod>2014-07-18T14:44:31+08:00</lastmod>
+        <lastmod>2014-07-21T20:03:21+08:00</lastmod>
     </url>
     <url>
         <loc>http://svenlu.github.io/robots.txt</loc>

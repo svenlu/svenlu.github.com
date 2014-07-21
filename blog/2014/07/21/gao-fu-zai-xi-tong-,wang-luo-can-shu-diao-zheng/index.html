@@ -3,13 +3,13 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>Modu Life</title>
+	<title>高负载系统，网络参数调整 - Modu Life</title>
 	<meta name="author" content="Sven Lu">
 
 	
 	<meta name="description" content="调整/etc/sysctl.conf
 ···bash
-vim /etc/sysctl.conf net.ipv4.tcp_syncookies = 1 表示开启SYN Cookies。当出现SYN等待队列溢出时，启用cookies来处理，可防范少量SYN攻击，默认为0，表示关闭； net. &hellip;">
+vim /etc/sysctl.conf net.ipv4.tcp_syncookies = 1 表示开启SYN Cookies。当出现SYN等待队列溢出时，启用cookies来处理，可防范少量SYN攻击，默认为0，表示关闭； net.ipv4 &hellip;">
 	
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
@@ -75,18 +75,9 @@ vim /etc/sysctl.conf net.ipv4.tcp_syncookies = 1 表示开启SYN Cookies。当�
 	
 		
 	
-	<div id="content" class="inner">
-
-
-    <article class="post">
-	<h2 class="title">
-		
-		<a href="/blog/2014/07/21/gao-fu-zai-xi-tong-%2Cwang-luo-can-shu-diao-zheng/">
-		
-			高负载系统，网络参数调整</a>
-	</h2>
-	<div class="entry-content">
-		<p>调整/etc/sysctl.conf
+	<div id="content" class="inner"><article class="post">
+	<h2 class="title">高负载系统，网络参数调整</h2>
+	<div class="entry-content"><p>调整/etc/sysctl.conf
 ···bash
 vim /etc/sysctl.conf</p>
 
@@ -156,10 +147,7 @@ vim /etc/sysctl.conf</p>
 <p>跟踪的连接超时结束时间 。</p>
 
 <p>然后执行/sbin/sysctl -p让参数生效</p>
-
-		
-		
-	</div>
+</div>
 
 
 <div class="meta">
@@ -187,11 +175,18 @@ vim /etc/sysctl.conf</p>
 </div>
 </article>
 
-<nav id="pagenavi">
-    
-    
-    <div class="center"><a href="/blog/archives">Blog Archives</a></div>
-</nav></div>
+	<div class="share">
+	<div class="addthis_toolbox addthis_default_style ">
+		
+		
+		
+		
+	</div>
+	
+</div>
+
+
+</div>
 	<footer id="footer" class="inner">Copyright &copy; 2014
 
     Sven Lu
