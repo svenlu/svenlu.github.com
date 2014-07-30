@@ -281,9 +281,9 @@
 
 <h4>26./proc/sys/net/ipv4/tcp_rmem</h4>
 
-<blockquote><p>该文件包含3个整数值,分别是:min,default,maxMin:为TCP socket预留用于接收缓冲的内存数量,即使在内存出现紧张情况下TCP socket都至少会有这么多数量的内存用于接收缓冲。Default:为TCP socket预留用于接收缓冲的内存数量,默认情况下该值影响其它协议使用的net.core.wmem中default的值。该值决定了在 tcp_adv_win_scale、tcp_app_win 和 tcp_app_win的默认值情况下,TCP窗口大小为 65535。Max:为TCP socket 预留用于接收缓冲的内存最大值。该值不会影响net.core.wmem中max的值,今天选择参数 SO_SNDBUF则不受该值影响。缺省设置:4096 87380 174760</p>
+<blockquote><p>该文件包含3个整数值,分别是:min,default,maxMin:为TCP socket预留用于接收缓冲的内存数量,即使在内存出现紧张情况下TCP socket都至少会有这么多数量的内存用于接收缓冲。Default:为TCP socket预留用于接收缓冲的内存数量,默认情况下该值影响其它协议使用的net.core.wmem中default的值。该值决定了在 tcp_adv_win_scale、tcp_app_win 和 tcp_app_win的默认值情况下,TCP窗口大小为 65535。Max:为TCP socket 预留用于接收缓冲的内存最大值。该值不会影响net.core.wmem中max的值,今天选择参数 SO_SNDBUF则不受该值影响。缺省设置:4096 87380 174760</p></blockquote>
 
-<h4>27./proc/sys/net/ipv4/tcp_mem> 该文件包含3个整数值,分别是:low,pressure,highLow:当TCP使用了低于该值的内存页面数时,TCP不会考虑释放内存。Pressure:当TCP使用了超过该值的内存页面数量时,TCP试图稳定其内存使用,进入pressure模式,当内存消耗低于low值时则退出pressure状态。High:允许所有tcp sockets用于排队缓冲数据报的页面量。一般情况下这些值是在系统启动时根据系统内存数量计算得到的。缺省设置:24576 32768 49152</h4></blockquote>
+<h4>27./proc/sys/net/ipv4/tcp_mem> 该文件包含3个整数值,分别是:low,pressure,highLow:当TCP使用了低于该值的内存页面数时,TCP不会考虑释放内存。Pressure:当TCP使用了超过该值的内存页面数量时,TCP试图稳定其内存使用,进入pressure模式,当内存消耗低于low值时则退出pressure状态。High:允许所有tcp sockets用于排队缓冲数据报的页面量。一般情况下这些值是在系统启动时根据系统内存数量计算得到的。缺省设置:24576 32768 49152</h4>
 
 <h4>28./proc/sys/net/ipv4/tcp_app_win</h4>
 
