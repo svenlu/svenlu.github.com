@@ -4,7 +4,7 @@
   <title><![CDATA[流浪剑客]]></title>
   <link href="http://svenlu.github.io/atom.xml" rel="self"/>
   <link href="http://svenlu.github.io/"/>
-  <updated>2014-07-31T01:14:42+08:00</updated>
+  <updated>2014-07-31T01:17:25+08:00</updated>
   <id>http://svenlu.github.io/</id>
   <author>
     <name><![CDATA[Sven Lu]]></name>
@@ -217,38 +217,38 @@
 
 <h4>25./proc/sys/net/ipv4/tcp_wmem</h4>
 
-<blockquote><p>该文件包含3个整数值,分别是:min,default,maxMin:为TCP socket预留用于发送缓冲的内存最小值。每个TCP socket都可以使用它。Default:为TCP socket预留于发送缓冲的内存数量,默认情况下该值会影响其它协议使 用的 net.core.wmem中default的值,一般要低于net.core.wmem中default的值。Max:为TCP socket预留用于发送缓冲的内存最大值。该值不会影响net.core.wmem_max,今天选择参数SO_SNDBUF则不受该值影响。默认值为128K。缺省设置:4096 16384 131072</p>
+<blockquote><p>该文件包含3个整数值,分别是:min,default,maxMin:为TCP socket预留用于发送缓冲的内存最小值。每个TCP socket都可以使用它。Default:为TCP socket预留于发送缓冲的内存数量,默认情况下该值会影响其它协议使 用的net.core.wmem中default的值,一般要低于net.core.wmem中default的值。Max:为TCP socket预留用于发送缓冲的内存最大值。该值不会影响net.core.wmem_max,今天选择参数SO_SNDBUF则不受该值影响。默认值为128K。缺省设置:4096 16384 131072</p></blockquote>
 
 <h4>26./proc/sys/net/ipv4/tcp_rmem</h4>
 
-<p>该文件包含3个整数值,分别是:min,default,maxMin:为TCP socket预留用于接收缓冲的内存数量,即使在内存出现紧张情况下TCP socket都至少会有这么多数量的内存用于接收缓冲。Default:为TCP socket预留用于接收缓冲的内存数量,默认情况下该值影响其它协议使用的net.core.wmem中default的值。该值决定了在 tcp_adv_win_scale、tcp_app_win 和 tcp_app_win的默认值情况下,TCP窗口大小为 65535。
-Max:为TCP socket 预留用于接收缓冲的内存最大值。该值不会影响net.core.wmem中max的值,今天选择参数 SO_SNDBUF则不受该值影响。缺省设置:4096 87380 174760</p>
+<blockquote><p>该文件包含3个整数值,分别是:min,default,maxMin:为TCP socket预留用于接收缓冲的内存数量,即使在内存出现紧张情况下TCP socket都至少会有这么多数量的内存用于接收缓冲。Default:为TCP socket预留用于接收缓冲的内存数量,默认情况下该值影响其它协议使用的net.core.wmem中default的值。该值决定了在 tcp_adv_win_scale、tcp_app_win 和 tcp_app_win的默认值情况下,TCP窗口大小为 65535。
+Max:为TCP socket 预留用于接收缓冲的内存最大值。该值不会影响net.core.wmem中max的值,今天选择参数 SO_SNDBUF则不受该值影响。缺省设置:4096 87380 174760</p></blockquote>
 
 <h4>27./proc/sys/net/ipv4/tcp_mem> 该文件包含3个整数值,分别是:low,pressure,highLow:当TCP使用了低于该值的内存页面数时,TCP不会考虑释放内存。Pressure:当TCP使用了超过该值的内存页面数量时,TCP试图稳定其内存使用,进入pressure模式,当内存消耗低于low值时则退出pressure状态。High:允许所有tcp sockets用于排队缓冲数据报的页面量。一般情况下这些值是在系统启动时根据系统内存数量计算得到的。缺省设置:24576 32768 49152</h4>
 
 <h4>28./proc/sys/net/ipv4/tcp_app_win</h4>
 
-<p>该文件表示保留max(window/2<sup>tcp</sup>_app_win,mss)数量的窗口由于应用缓冲。当为0时表示不需要缓冲。缺省设置:31</p>
+<blockquote><p>该文件表示保留max(window/2<sup>tcp</sup>_app_win,mss)数量的窗口由于应用缓冲。当为0时表示不需要缓冲。缺省设置:31</p></blockquote>
 
 <h4>29./proc/sys/net/ipv4/tcp_adv_win_scale</h4>
 
-<p>该文件表示计算缓冲开销 bytes/2<sup>tcp</sup>_adv_win_scale(如果 tcp_adv_win_scale >;0)或者bytes-bytes/2<sup>-tcp_adv_win_scale</sup>(如果tcp_adv_win_scale)。缺省设置:2</p>
+<blockquote><p>该文件表示计算缓冲开销 bytes/2<sup>tcp</sup>_adv_win_scale(如果 tcp_adv_win_scale >;0)或者bytes-bytes/2<sup>-tcp_adv_win_scale</sup>(如果tcp_adv_win_scale)。缺省设置:2</p></blockquote>
 
 <h3>IP Variables####1./proc/sys/net/ipv4/ip_local_port_range> 该文件表示TCP/UDP协议打开的本地端口号。缺省设置:1024 4999建议设置:32768 61000</h3>
 
 <h4>2./proc/sys/net/ipv4/ip_nonlocal_bind</h4>
 
-<p>该文件表示是否允许进程邦定到非本地地址。缺省设置:0</p>
+<blockquote><p>该文件表示是否允许进程邦定到非本地地址。缺省设置:0</p></blockquote>
 
 <h4>3./proc/sys/net/ipv4/ip_dynaddr</h4>
 
-<p>该参数通常用于使用拨号连接的情况,可以使系统动能够立即改变ip包的源地址 为该ip地址,同时中断原有的tcp对话而用新地址重新发出一个syn请求包,开始新的tcp对话。在使用ip欺骗时,该参数可以立即改变伪装地址为新的ip地址。该文件表示是否允许动态地址,如果该值非0,表示允许;如果该值大于1,内核将通过log记录动态地址重写信息。缺省设置:0</p>
+<blockquote><p>该参数通常用于使用拨号连接的情况,可以使系统动能够立即改变ip包的源地址 为该ip地址,同时中断原有的tcp对话而用新地址重新发出一个syn请求包,开始新的tcp对话。在使用ip欺骗时,该参数可以立即改变伪装地址为新的ip地址。该文件表示是否允许动态地址,如果该值非0,表示允许;如果该值大于1,内核将通过log记录动态地址重写信息。缺省设置:0</p></blockquote>
 
 <h4>4./proc/sys/net/ipv4/icmp_echo_ignore_all</h4>
 
-<p>/proc/sys/net/i pv4/icmp_echo_i gnore_broadcasts该文件表示内核是否忽略所有的ICMPECHO请求,或忽略广播和多播请求。
+<blockquote><p>/proc/sys/net/i pv4/icmp_echo_i gnore_broadcasts该文件表示内核是否忽略所有的ICMPECHO请求,或忽略广播和多播请求。
 0,响应请求1,忽略请求
-缺省设置:0建议设置:1</p>
+缺省设置:0建议设置:1</p></blockquote>
 
 <h4>5./proc/sys/net/ipv4/icmp_ratelimit</h4>
 
@@ -256,25 +256,25 @@ Max:为TCP socket 预留用于接收缓冲的内存最大值。该值不会影�
 
 <h4>7./proc/sys/net/ipv4/icmp_ignore_bogus_error_reponses</h4>
 
-<p>某些路由器违背 RFC1122 标准,其对广播帧发送伪造的响应来应答。这种违背行为通常会被以告警的方式记录在系统日志中。如果该选项设置为True,内核不会记录这种警告信息。缺省设置:0</p></blockquote>
+<blockquote><p>某些路由器违背 RFC1122 标准,其对广播帧发送伪造的响应来应答。这种违背行为通常会被以告警的方式记录在系统日志中。如果该选项设置为True,内核不会记录这种警告信息。缺省设置:0</p></blockquote>
 
 <h4>8./proc/sys/net/ipv4/igmp_max_memberships</h4>
 
-<blockquote><p>该文件表示多播组中的最大成员数量。缺省设置:20</p>
+<blockquote><p>该文件表示多播组中的最大成员数量。缺省设置:20</p></blockquote>
 
 <h3>Other Configuration</h3>
 
 <h4>1./proc/sys/net/ipv4/conf/*/accept_redirects</h4>
 
-<p>如果主机所在的网段中有两个路由器,你将其中一个设置成了缺省网关,但是该网 关在收到你的ip包时发现该ip包必须经过另外一个路由器,这时这个路由器就会给你发一个所谓的“重定向”icmp包,告诉将ip包转发到另外一个路由器。参数值为布尔值,1 表示接收这类重定向icmp信息,0表示忽略。在充当路由器的linux主机上缺省值为0,在一般的linux主机上缺省值为1。建议将其改为0以消除安全性隐患。</p></blockquote>
+<blockquote><p>如果主机所在的网段中有两个路由器,你将其中一个设置成了缺省网关,但是该网 关在收到你的ip包时发现该ip包必须经过另外一个路由器,这时这个路由器就会给你发一个所谓的“重定向”icmp包,告诉将ip包转发到另外一个路由器。参数值为布尔值,1 表示接收这类重定向icmp信息,0表示忽略。在充当路由器的linux主机上缺省值为0,在一般的linux主机上缺省值为1。建议将其改为0以消除安全性隐患。</p></blockquote>
 
 <h4>2./proc/sys/net/i pv4/*/accept_source_route</h4>
 
-<blockquote><p>是否接受含有源路由信息的ip包。参数值为布尔值,1表示接受,0表示不接受。在充当网关的linux主机上缺省值为1,在一般的 linux 主机上缺省值为0。从安全性角度出发,建议关闭该功能。</p>
+<blockquote><p>是否接受含有源路由信息的ip包。参数值为布尔值,1表示接受,0表示不接受。在充当网关的linux主机上缺省值为1,在一般的 linux 主机上缺省值为0。从安全性角度出发,建议关闭该功能。</p></blockquote>
 
 <h4>3./proc/sys/net/i pv4/<em>/secure_redi rects> 其实所谓的“安全重定向”就是只接受来自网关的“重定向”icmp包。该参数就是用来设置“安全重定向”功能的。参数值为布尔值,1表示启用,0表示禁止,缺省值为启用。####4./proc/sys/net/i pv4/</em>/proxy_arp</h4>
 
-<p>设置是否对网络上的arp包进行中继。参数值为布尔值,1 表示中继,0 表示忽略, 缺省值为 0。该参数通常只对充当路由器的linux主机有用。</p></blockquote>
+<blockquote><p>设置是否对网络上的arp包进行中继。参数值为布尔值,1 表示中继,0 表示忽略, 缺省值为 0。该参数通常只对充当路由器的linux主机有用。</p></blockquote>
 ]]></content>
   </entry>
   
