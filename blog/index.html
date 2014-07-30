@@ -7,8 +7,7 @@
 	<meta name="author" content="Sven Lu">
 
 	
-	<meta name="description" content="调整/etc/sysctl.conf 1
-vim /etc/sysctl.conf 1 1. net.ipv4.tcp_syncookies = 1 表示开启SYN Cookies。当出现SYN等待队列溢出时，启用cookies来处理，可防范少量SYN攻击，默认为0，表示关闭； 1 2. net &hellip;">
+	<meta name="description" content="通过/proc/sys/net/ipv4优化Linux下网了性能 /proc/sys/net/ipv4/优化 1./proc/sys/net/ipv4/ip_forward 该文件表示是否打开IP转发 0.禁止 1.转发 缺省设置:0 2./proc/sys/net/ipv4/ &hellip;">
 	
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
@@ -75,6 +74,108 @@ vim /etc/sysctl.conf 1 1. net.ipv4.tcp_syncookies = 1 表示开启SYN Cookies。
 		
 	
 	<div id="content" class="inner">
+
+
+    <article class="post">
+	<h2 class="title">
+		
+		<a href="/blog/2014/07/30/slash-proc-slash-sys-slash-net-slash-ipv4xiang-jie/">
+		
+			/proc/sys/net/ipv4详解</a>
+	</h2>
+	<div class="entry-content">
+		<h1>通过/proc/sys/net/ipv4优化Linux下网了性能</h1>
+
+<h2>/proc/sys/net/ipv4/优化</h2>
+
+<h3>1./proc/sys/net/ipv4/ip_forward</h3>
+
+<p> 该文件表示是否打开IP转发
+ 0.禁止
+ 1.转发
+ 缺省设置:0</p>
+
+<h3>2./proc/sys/net/ipv4/ip_default_ttl</h3>
+
+<p> 该文件表示数据报的生存周期(Time To Live)，即最多经过多少路由器。
+ 缺省设置:64
+ 增加该值会降低系统的性能。</p>
+
+<h3>3./proc/sys/net/ipv4/ip_no_pmtu_disc</h3>
+
+<p> 该文件表示在全局范围内关闭路径MTU探测功能。
+ 缺省设置:0</p>
+
+<h3>4./proc/sys/net/ipv4/route/min_pmtu</h3>
+
+<p> 该文件表示最小路径MTU的大小。
+ 缺省设置:552</p>
+
+<h3>5./proc/sys/net/ipv4/route/mtu_expires</h3>
+
+<p> 该文件表示PMTU信息缓存多长时间(秒)
+ 缺省设置:600(秒)</p>
+
+<h3>6./proc/sys/net/ipv4/route/min_adv_mss</h3>
+
+<p> 该文件表示最小的MSS（Maximum Segment Size）大小，取决于第一跳得路由器MTU。
+ 缺省设置:256(bytes)</p>
+
+<h2>IP Fragmentation</h2>
+
+<h3>1./proc/sys/net/ipv4/ipfrag_low_thresh</h3>
+
+<p> /proc/sys/net/ipv4/ipfrag_low_thresh 两个文件分别表示用于重组IP分段的内存分配最低值和最高值，一旦达到最高内存分配值，其他分段将被丢弃，直到达到最低内存分配值。
+ 缺省设置:196608（ipfrag_low_thresh）262144（ipfrage_high_thresh）</p>
+
+<h3>2./proc/sys/net/ipv4/ipfrag_time</h3>
+
+<p> 该文件表示一个IP分段在内存中保留多少秒
+ 缺省设置:30（秒）</p>
+
+<h2>INET Peer Storage</h2>
+
+<h3>1./proc/sys/net/ipv4/inet_peer_threshold</h3>
+
+<p> INET 对端存储器某个合适值，当超过该阀值条目将被丢弃。该阀值同样决定生存时间以及废物收集通过的时间间隔。条目越多，存活期越低，GC间隔越短。
+ 缺省设置:65664</p>
+
+<h3>2./proc/sys/net/ipv4/inet_peer_minttl</h3>
+
+<p> 条目的最低存活期。在重组端必须要有足够的碎片(fragment)存活期。这个最低存活期必须保证缓冲池容积是否少于inet_peer_threshold。该值以jiffies为单位测量。
+ 缺省设置：120</p>
+
+		
+		
+	</div>
+
+
+<div class="meta">
+	<div class="date">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-07-30T22:54:00+08:00" pubdate data-updated="true">Jul 30<span>th</span>, 2014</time></div>
+	<div class="tags">
+
+
+	<a class='category' href='/blog/categories/linux/'>Linux</a>
+
+
+</div>
+	
+	<div class="comments"><a href="/blog/2014/07/30/slash-proc-slash-sys-slash-net-slash-ipv4xiang-jie/#disqus_thread">Comments</a></div>
+	
+</div>
+</article>
 
 
     <article class="post">
