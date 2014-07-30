@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Linux | 流浪剑客]]></title>
   <link href="http://svenlu.github.io/blog/categories/linux/atom.xml" rel="self"/>
   <link href="http://svenlu.github.io/"/>
-  <updated>2014-07-31T01:27:59+08:00</updated>
+  <updated>2014-07-31T01:31:34+08:00</updated>
   <id>http://svenlu.github.io/</id>
   <author>
     <name><![CDATA[Sven Lu]]></name>
@@ -18,9 +18,9 @@
     <link href="http://svenlu.github.io/blog/2014/07/30/slash-proc-slash-sys-slash-net-slash-ipv4xiang-jie/"/>
     <updated>2014-07-30T22:54:00+08:00</updated>
     <id>http://svenlu.github.io/blog/2014/07/30/slash-proc-slash-sys-slash-net-slash-ipv4xiang-jie</id>
-    <content type="html"><![CDATA[<h2>通过/proc/sys/net/ipv4优化Linux下网了性能</h2>
+    <content type="html"><![CDATA[<h2>通过/proc/sys/net/ipv4优化Linux下网络性能</h2>
 
-<h3>/proc/sys/net/ipv4/优化</h3>
+<h3>/proc/sys/net/ipv4参数解析</h3>
 
 <h4>1./proc/sys/net/ipv4/ip_forward</h4>
 
