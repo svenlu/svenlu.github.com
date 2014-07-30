@@ -4,7 +4,7 @@
   <title><![CDATA[流浪剑客]]></title>
   <link href="http://svenlu.github.io/atom.xml" rel="self"/>
   <link href="http://svenlu.github.io/"/>
-  <updated>2014-07-31T01:25:32+08:00</updated>
+  <updated>2014-07-31T01:26:17+08:00</updated>
   <id>http://svenlu.github.io/</id>
   <author>
     <name><![CDATA[Sven Lu]]></name>
@@ -237,7 +237,9 @@
 
 <h3>IP Variables</h3>
 
-<h4>1./proc/sys/net/ipv4/ip_local_port_range> 该文件表示TCP/UDP协议打开的本地端口号。缺省设置:1024 4999建议设置:32768 61000</h4>
+<h4>1./proc/sys/net/ipv4/ip_local_port_range</h4>
+
+<blockquote><p>该文件表示TCP/UDP协议打开的本地端口号。缺省设置:1024 4999建议设置:32768 61000</p></blockquote>
 
 <h4>2./proc/sys/net/ipv4/ip_nonlocal_bind</h4>
 
