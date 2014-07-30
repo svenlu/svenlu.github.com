@@ -4,7 +4,7 @@
   <title><![CDATA[流浪剑客]]></title>
   <link href="http://svenlu.github.io/atom.xml" rel="self"/>
   <link href="http://svenlu.github.io/"/>
-  <updated>2014-07-31T01:23:40+08:00</updated>
+  <updated>2014-07-31T01:25:32+08:00</updated>
   <id>http://svenlu.github.io/</id>
   <author>
     <name><![CDATA[Sven Lu]]></name>
@@ -235,7 +235,9 @@
 
 <blockquote><p>该文件表示计算缓冲开销 bytes/2<sup>tcp</sup>_adv_win_scale(如果 tcp_adv_win_scale >;0)或者bytes-bytes/2<sup>-tcp_adv_win_scale</sup>(如果tcp_adv_win_scale)。缺省设置:2</p></blockquote>
 
-<h3>IP Variables####1./proc/sys/net/ipv4/ip_local_port_range> 该文件表示TCP/UDP协议打开的本地端口号。缺省设置:1024 4999建议设置:32768 61000</h3>
+<h3>IP Variables</h3>
+
+<h4>1./proc/sys/net/ipv4/ip_local_port_range> 该文件表示TCP/UDP协议打开的本地端口号。缺省设置:1024 4999建议设置:32768 61000</h4>
 
 <h4>2./proc/sys/net/ipv4/ip_nonlocal_bind</h4>
 
@@ -273,9 +275,11 @@
 
 <blockquote><p>是否接受含有源路由信息的ip包。参数值为布尔值,1表示接受,0表示不接受。在充当网关的linux主机上缺省值为1,在一般的 linux 主机上缺省值为0。从安全性角度出发,建议关闭该功能。</p></blockquote>
 
-<h4>3./proc/sys/net/i pv4/<em>/secure_redi rects> 其实所谓的“安全重定向”就是只接受来自网关的“重定向”icmp包。该参数就是用来设置“安全重定向”功能的。参数值为布尔值,1表示启用,0表示禁止,缺省值为启用。####4./proc/sys/net/i pv4/</em>/proxy_arp</h4>
+<h4>3./proc/sys/net/i pv4/*/secure_redi rects</h4>
 
-<blockquote><p>设置是否对网络上的arp包进行中继。参数值为布尔值,1 表示中继,0 表示忽略, 缺省值为 0。该参数通常只对充当路由器的linux主机有用。</p></blockquote>
+<blockquote><p>其实所谓的“安全重定向”就是只接受来自网关的“重定向”icmp包。该参数就是用来设置“安全重定向”功能的。参数值为布尔值,1表示启用,0表示禁止,缺省值为启用。####4./proc/sys/net/i pv4/*/proxy_arp</p>
+
+<p>设置是否对网络上的arp包进行中继。参数值为布尔值,1 表示中继,0 表示忽略, 缺省值为 0。该参数通常只对充当路由器的linux主机有用。</p></blockquote>
 ]]></content>
   </entry>
   
